@@ -9,7 +9,6 @@ import axi from "../../../adios";
 export const GetTodos = async (setDataTodo, user) =>{
 
   try {
-      console.log(user)
         const res = await axi.get(`/todos/${user.id}`)
         setDataTodo(res.data)
         
