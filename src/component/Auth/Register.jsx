@@ -63,7 +63,7 @@ function Register(){
                 />
                 <button className="btn btn-success btn btn-block" type="submit"> Submit</button>
             </form>
-            <Link to={"/register"}>Register</Link>
+            <p> Sudah Memiliki Akun? <Link to={"/login"}>Login</Link></p>
         </div>
     )
 }
