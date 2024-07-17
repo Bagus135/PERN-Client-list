@@ -14,10 +14,8 @@ const InputTodo = ({setDataTodo, setErr}) =>{
             if(description != null ){
                 console.log(description)
                 const body = {description};
-                const response = await axi.post(`/todos/${user.id}`,{
-                    headers : {"Content-Type" : "application/json"},
-                    body : JSON.stringify(body)
-                })
+                const response = await axi.post(`/todos/${user.id}`, body
+                )
                 console.log(response)    
                 setInputValue("")
                 setDescription(null)
