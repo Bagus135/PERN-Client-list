@@ -1,6 +1,6 @@
 const foto = "/img/Ayanokouji.jpg"
 const facebook = '/img/facebook.png'
-const ig = '/img/ig.png'
+const ig = '/img/instagram.png'
 const github = '/img/github.png'
 
 
