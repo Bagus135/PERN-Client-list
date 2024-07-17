@@ -24,6 +24,7 @@ function Register(){
         const body = {name, email, password}
         try {
               const res = await axi.post('/auth/register', body)
+              console.log(res)
               const token = res.data.token
               localStorage.setItem("token", JSON.stringify(token))
               navigate('/main')
