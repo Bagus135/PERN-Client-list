@@ -43,7 +43,7 @@ const InputTodo = ({setDataTodo, setErr}) =>{
                     setDescription(e.target.value);
                     setInputValue(e.target.value);
                 }}/>
-                <button className="btn btn-success" type="submit">Add</button>
+                <button className="btn btn-primary" type="submit">Add</button>
             </form>
 
         </div>

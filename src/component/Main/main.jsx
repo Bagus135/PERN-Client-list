@@ -53,7 +53,7 @@ function Main() {
         <h1>Welcome {user.name} 
             <button className="btn btn-secondary" onClick={()=>handleEditName()}>✏</button>
         </h1>
-        <button className="btn btn-success" onClick={() => logout()}> Logout</button>
+        <button className="btn btn-secondary" onClick={() => logout()}> Logout</button>
         <InputTodo setDataTodo={setDataTodo} setErr={setErr} />
         <div className='d-flex justify-content-center'>{err}</div>
         <ListTodos setDataTodo={setDataTodo} dataTodo={dataTodo} setErr={setErr}/>

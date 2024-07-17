@@ -61,7 +61,7 @@ function Register(){
                 value={password}
                 onChange={e=> onChange(e)}
                 />
-                <button className="btn btn-success btn btn-block" type="submit"> Submit</button>
+                <button className="btn btn-primary btn btn-block" type="submit"> Submit</button>
             </form>
             <p> Sudah Memiliki Akun? <Link to={"/login"}>Login</Link></p>
         </div>

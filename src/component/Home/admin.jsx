@@ -38,7 +38,7 @@ function Admin(){
 
                 <div className="modal-footer">
                     <button type="button" 
-                    className="btn btn-success" 
+                    className="btn btn-primary" 
                     data-dismiss="modal">Ganteng Banget :V </button>
                     <button type="button" className="btn btn-danger" data-dismiss="modal">Close</button>
                 </div>
