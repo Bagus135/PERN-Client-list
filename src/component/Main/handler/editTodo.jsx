@@ -13,10 +13,7 @@ const EditTodo = ({todo, setDataTodo, setErr}) =>{
         try {
             if(Value !== ""){
                 const body = {description : Value};
-                await axi.put(`/todos/${user.id}/${todo.todo_id}`,{
-                    headers: {"Content-Type" : "application/json"},
-                    body : JSON.stringify(body),
-                });
+                await axi.put(`/todos/${user.id}/${todo.todo_id}`,{body});
                 setErr("Berhasil Mengedit Jadwal")
                 return  GetTodos(setDataTodo, user)
             }

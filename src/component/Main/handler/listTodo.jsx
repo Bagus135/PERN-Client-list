@@ -10,9 +10,9 @@ export const GetTodos = async (setDataTodo, user) =>{
 
   try {
       console.log(user)
-        const response = await axi.get(`/todos/${user.id}`)
-        const jsonData = await response.json();
-        setDataTodo((jsonData))
+        const res = await axi.get(`/todos/${user.id}`)
+        console.log(res)
+        setDataTodo((res))
         
     } catch (error) {
         console.log(error.message)
