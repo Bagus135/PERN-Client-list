@@ -5,7 +5,7 @@ import axi from "../../adios"
 
 function Register(){
     const navigate = useNavigate();
-    console.log(import.meta.env.baseURL)
+    console.log(import.meta.env.VITE_baseURL)
 
     const [inputs, setInputs] = useState({
         name : "",

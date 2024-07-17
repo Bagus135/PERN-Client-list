@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const axi = axios.create({
-    baseURL : import.meta.env.baseURL
+    baseURL : import.meta.env.VITE_baseURL
 })
 
 export default axi
