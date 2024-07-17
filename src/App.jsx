@@ -29,7 +29,7 @@ function App(){
     <div>
     <nav className='navbar navbar-expand-lg bg-dark'>
       <div className="container">
-        <Link to="/" className='navbar-brand'>Home</Link>
+        <Link to="/" className='btn btn-primary'>Home</Link>
         <Admin/>
       </div>
     </nav>
