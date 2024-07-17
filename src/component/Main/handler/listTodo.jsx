@@ -11,8 +11,7 @@ export const GetTodos = async (setDataTodo, user) =>{
   try {
       console.log(user)
         const res = await axi.get(`/todos/${user.id}`)
-        console.log(res)
-        setDataTodo((res))
+        setDataTodo(res.data)
         
     } catch (error) {
         console.log(error.message)
