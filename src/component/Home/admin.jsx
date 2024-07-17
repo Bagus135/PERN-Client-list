@@ -1,9 +1,9 @@
 import { getIMG } from "../../img/utiilsIMg"
 
-const foto = getIMG("./Ayanokouji.jpg")
-const facebook = getIMG("./facebook.png")
-const ig = getIMG("./instagram.png")
-const github = getIMG("./github.jpg")
+const foto = getIMG("../../img/Ayanokouji.jpg")
+const facebook = getIMG("../../img/facebook.png")
+const ig = getIMG("../../img/instagram.png")
+const github = getIMG("../../img/github.jpg")
 
 function Admin(){
     return(
@@ -25,11 +25,11 @@ function Admin(){
                 </div>
 
                 <div className="modal-body">
-                    <h2>ABOUT AUTHOR</h2>
+                    <h2 className="text-center mt-5">ABOUT AUTHOR</h2>
                     <img src={foto}/>
-                    <h3>Bagus Mustaqim</h3>
+                    <h3 className="text-center mt-5">Bagus Mustaqim</h3>
                     <p>Ampun puhh.... Masih pemula puhh. Saya masih kroco puh. Saya belum ada apa apanya dibandingkan sepuh sekalian</p>
-                    <h3 className='follow'>Follow Me</h3>
+                    <h3 className='text-center mt-5'>Follow Me</h3>
 
                     <div className='Sosmed'>
                     <a href='https://www.facebook.com/bagus.mustaqim.56?mibextid=ZbWKwL' target='blank'><img src={facebook} title='Facebook'/></a>
