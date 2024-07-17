@@ -39,7 +39,7 @@ function Main() {
            await axi.put(`/users/${user.id}`,{newName})
            getUser();
        } catch (error) {
-        console.log(error.message)
+        setErr(error.message)
        }
     }
 
