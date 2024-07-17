@@ -1,9 +1,9 @@
 import { getIMG } from "../../img/utiilsIMg"
 
-const foto = getIMG("../../img/Ayanokouji.jpg")
-const facebook = getIMG("../../img/facebook.png")
-const ig = getIMG("../../img/instagram.png")
-const github = getIMG("../../img/github.jpg")
+const foto = getIMG("./Ayanokouji.jpg")
+const facebook = getIMG("./facebook.png")
+const ig = getIMG("./instagram.png")
+const github = getIMG("./github.jpg")
 
 function Admin(){
     return(
