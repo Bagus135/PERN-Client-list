@@ -1,8 +1,7 @@
-import { Img } from "../../img/utiilsIMg"
-const foto = Img.foto
-const facebook = Img.facebook
-const ig = Img.ig
-const github = Img.github
+const foto = "/img/Ayanokouji.jpg"
+const facebook = '/img/facebook.png'
+const ig = '/img/ig.png'
+const github = '/img/github.png'
 
 
 function Admin(){
