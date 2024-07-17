@@ -7,7 +7,7 @@ import axi from "../../adios";
 function Login(){
     const navigate = useNavigate(0);
     const {setIsAuthenticated} = useContext(AuthContext);
-    
+    const [Err, setErr] = useState(null)
     const [inputs, setInputs] = useState({
         email : "",
         password : "",
@@ -33,7 +33,7 @@ function Login(){
             navigate('/main')
 
         } catch (error) {
-            console.log(error.message)
+            setErr(error.message)
         }
     }
 
@@ -41,6 +41,8 @@ function Login(){
         <div className="container mt-5">
             <h1 className="text-center my-5">Login</h1>
             <form onSubmit={(e)=> onSubmit(e)}>
+                {Err}
+                <hr/>
                 <input 
                 type="email"
                 name="email"
@@ -59,7 +61,7 @@ function Login(){
                 />
                 <button className="btn btn-success btn btn-block" type="submit"> Submit</button>
             </form>
-            <Link to={"/register"}>Register</Link>
+            <p> Belum Memiliki Akun? <Link to={"/register"}>Register</Link></p>
         </div>
     )
 }

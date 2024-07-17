@@ -5,7 +5,7 @@ import axi from "../../adios"
 
 function Register(){
     const navigate = useNavigate();
-
+    const [Err, setErr] = useState(null)
     const [inputs, setInputs] = useState({
         name : "",
         email : "",
@@ -27,13 +27,14 @@ function Register(){
               localStorage.setItem("token", JSON.stringify(token))
               navigate('/main')
         } catch (error) {
-            console.log(error)
+            setErr(error.message)
         }
     }
 
     return (
         <div className="container mt-5">
             <h1 className="text-center my-5">Register</h1>
+            {Err}
             <hr/>
             <form onSubmit={(e)=> onSubmit(e)}>
                 <input 
